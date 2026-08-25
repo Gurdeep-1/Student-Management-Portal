@@ -2,6 +2,9 @@
 
 This project is an academic portal built with React + Vite (frontend) and an Express API server using SQLite by default. Optional Postgres support is available for production setups.
 
+# Project Link - https://student-management-portal-unqf.onrender.com
+
+
 ## Run (development)
 
 Install dependencies and start both servers (frontend + API):
