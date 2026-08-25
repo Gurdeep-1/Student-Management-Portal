@@ -44,7 +44,8 @@ const JWT_SECRET = process.env.JWT_SECRET || "dev-secret-change-me";
 // Configure via ALLOWED_ORIGINS="https://a.example.com,https://b.example.com"
 // Falls back to the Vite dev server origin when nothing is configured.
 // ---------------------------------------------------------------------------
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || "http://localhost:5173" || "https://student-management-portal-unqf.onrender.com")
+const defaultOrigins = "http://localhost:5173,https://student-management-portal-unqf.onrender.com";
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || defaultOrigins)
   .split(",")
   .map((origin) => origin.trim())
   .filter(Boolean);
